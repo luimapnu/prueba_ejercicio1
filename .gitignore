@@ -1,0 +1,33 @@
+# ==========================================
+# SECCIÓN DE SEGURIDAD Y CREDENCIALES (CE 6f)
+# ==========================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+config/local_settings.json
+
+# Excluir credenciales de bases de datos o conexiones locales
+config.php
+credentials.php
+*.pem
+*.key
+
+# ==========================================
+# CARPETAS DE SALIDA Y GENERADORES DE DOCS
+# ==========================================
+out/
+docs/
+dist/
+build/
+
+# ==========================================
+# DEPENDENCIAS Y ARCHIVOS DE SISTEMA
+# ==========================================
+node_modules/
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
