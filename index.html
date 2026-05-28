@@ -1,1 +1,36 @@
-<h1>proyecto prueba</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Control de Inventario - Gimnasio</title>
+</head>
+<body>
+    <h1>Sistema de Gestión de Maquinaria</h1>
+
+    <script>
+        /**
+         * Registra una nueva máquina de musculación en el inventario del sistema.
+         * @param {string} nombre - El nombre o modelo de la maquinaria (ej. Prensa, Sentadillas).
+         * @param {number} cantidad - Unidades que entran al gimnasio (debe ser mayor que 0).
+         * @returns {boolean} Retorna true si los datos son válidos y se registra, false si hay error.
+         */
+        function registrarMaquinaria(nombre, cantidad) {
+            if (nombre === "" || cantidad <= 0) {
+                return false;
+            }
+            console.log("Maquinaria registrada con éxito: " + nombre);
+            return true;
+        }
+
+        /**
+         * Calcula el peso total de discos cargados en una zona de entrenamiento.
+         * @param {number} numDiscos - Cantidad total de discos de soporte.
+         * @param {number} pesoDisco - Peso individual de cada disco en kilogramos.
+         * @returns {number} El resultado del cálculo del peso total en kg.
+         */
+        function calcularPesoTotal(numDiscos, pesoDisco) {
+            return numDiscos * pesoDisco;
+        }
+    </script>
+</body>
+</html>
